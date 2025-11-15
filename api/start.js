@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  return res.status(200).json({
+  res.status(200).json({
     frames: [
       {
         version: "vNext",
@@ -7,8 +7,8 @@ export default function handler(req, res) {
         buttons: [
           {
             action: "post",
-            label: "Your move",
-            target: "https://amoba-frame.vercel.app/api/play"
+            label: "Next move",
+            target: "https://amoba-frame.vercel.app/api/frame"
           }
         ]
       }
