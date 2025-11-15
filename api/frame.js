@@ -1,5 +1,7 @@
-export default function handler(req, res) {
-  res.status(200).json({
+export async function GET() {
+  return Response.json({
+    accepts: ["https://amoba-frame.vercel.app"],
+
     frames: [
       {
         version: "vNext",
